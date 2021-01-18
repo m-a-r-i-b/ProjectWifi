@@ -34,7 +34,6 @@ while(flag){
     str += elements[pointers[j]];
   }
   
-  console.log(str);
   fs.appendFileSync(outputFileName, str+"\r\n", function (err) {
     if (err) throw err;
   });
